@@ -37,7 +37,7 @@ pip install -r requirements.txt
 Each module runs as a script (from the project root):
 
 ```bash
-python src/calibration.py                                   # Part I(a), DFF 2000 -> latest
+python src/calibration.py                                   
 python src/calibration.py --series DGS3MO --start 2015-01-01  # any FRED series / window
 python src/calibration.py --source path/or/url.csv --end 2024-12-31
 python src/vasicek.py       
