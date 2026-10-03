@@ -6,25 +6,25 @@ Monte Carlo), swap rate, ZCB option, SOFR curve and European swaption with Black
 ## Layout
 
 ```
-fixed-income-pricing/
+IIQF_Project_Report/
 |-- data/                     # Raw FRED / SOFR CSV pulls (timestamped)
 |   |-- DFF_<date>.csv        #   written by fetch_fed_rates(); offline fallback
-|   `-- sofr_2026-10-01.csv   #   SOFR market data (report Table 4)
+|   |-- sofr_2026-10-01.csv   #   SOFR market data (report Table 4)
 |-- src/
 |   |-- vasicek.py            # ZCB pricing: B, A, zcb_price(), closed-form ZCB option
 |   |-- calibration.py        # OLS calibration from FRED data (generic URL / series / window)
 |   |-- curve.py              # SOFR yield curve: bootstrap + linear interpolation
 |   |-- monte_carlo.py        # MC simulation + antithetic variates, ZCB and ZCB call
 |   |-- swaps.py              # Swap rate from ZCB strip
-|   `-- swaptions.py          # Black's formula for swaptions
+|   -- swaptions.py          # Black's formula for swaptions
 |-- notebooks/
 |   |-- 01_calibration.ipynb             # Part I(a)
 |   |-- 02_term_structure.ipynb          # Parts I(b), I(d)
 |   |-- 03_monte_carlo_validation.ipynb  # Parts I(c), I(e)
-|   `-- 04_swaption_pricing.ipynb        # Part II(a)-(d)
+|   |-- 04_swaption_pricing.ipynb        # Part II(a)-(d)
 |-- tests/                    # Unit tests (analytical vs MC agreement, curve repricing, parity)
 |-- requirements.txt
-`-- README.md
+|-- README.md
 ```
 
 ## Setup
