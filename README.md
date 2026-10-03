@@ -18,11 +18,11 @@ IIQF_Project_Report/
 |   |-- swaps.py              # Swap rate from ZCB strip
 |   |-- swaptions.py          # Black's formula for swaptions
 |-- notebooks/
-|   |-- 01_calibration.ipynb             # Part I(a)
-|   |-- 02_term_structure.ipynb          # Parts I(b), I(d)
-|   |-- 03_monte_carlo_validation.ipynb  # Parts I(c), I(e)
-|   |-- 04_swaption_pricing.ipynb        # Part II(a)-(d)
-|-- tests/                    # Unit tests (analytical vs MC agreement, curve repricing, parity)
+|   |-- 01_calibration.ipynb             
+|   |-- 02_term_structure.ipynb          
+|   |-- 03_monte_carlo_validation.ipynb  
+|   |-- 04_swaption_pricing.ipynb        
+|-- tests/                    # Unit tests (analytical vs MC agreement)
 |-- requirements.txt
 |-- README.md
 ```
@@ -41,11 +41,11 @@ Each module runs as a script (from the project root):
 python src/calibration.py                                   # Part I(a), DFF 2000 -> latest
 python src/calibration.py --series DGS3MO --start 2015-01-01  # any FRED series / window
 python src/calibration.py --source path/or/url.csv --end 2024-12-31
-python src/vasicek.py        # Part I(b)
-python src/monte_carlo.py    # Parts I(c), I(e)
-python src/swaps.py          # Part I(d)
-python src/curve.py          # Part II(a)
-python src/swaptions.py      # Part II(b)
+python src/vasicek.py       
+python src/monte_carlo.py    
+python src/swaps.py          
+python src/curve.py          
+python src/swaptions.py      
 pytest -q                    # tests
 ```
 
