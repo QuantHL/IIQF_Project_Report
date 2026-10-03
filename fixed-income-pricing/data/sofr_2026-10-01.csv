@@ -1,0 +1,10 @@
+tenor_years,rate_pct,instrument
+0.0833333333,3.91628,term_sofr
+0.25,4.04730,term_sofr
+0.5,4.22578,term_sofr
+1.0,4.54462,term_sofr
+2.0,4.59,ois
+3.0,4.68,ois
+5.0,4.71,ois
+7.0,4.75,ois
+10.0,4.83,ois
