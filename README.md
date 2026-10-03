@@ -1,7 +1,6 @@
 # Vasicek Short-Rate Model and Swaption Valuation
 
-IIQF capstone project (CPFE). Vasicek calibration to Fed data, ZCB pricing (closed form and
-Monte Carlo), swap rate, ZCB option, SOFR curve and European swaption with Black's formula.
+Vasicek calibration to Fed data, ZCB pricing (closed form and Monte Carlo), swap rate, ZCB option, SOFR curve and European swaption with Black's formula.
 
 ## Layout
 
