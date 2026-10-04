@@ -31,7 +31,8 @@ IIQF_Project_Report/
 ```bash
 pip install -r requirements.txt
 ```
-
+If working on conda, I suggest alternatively, create a dedicated Conda environment (named quant) to avoid package conflicts in your base environment: 
+``` conda create -n quant python=3.11 numpy pandas scipy matplotlib scikit-learn jupyter ipykernel ``` 
 ## Run
 
 Each module runs as a script (from the project root):
