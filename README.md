@@ -51,3 +51,16 @@ pytest -q                    # tests
 
 The notebooks add `../src` to `sys.path`; open them with `notebooks/` as the working directory.
 
+## Usage & Execution
+
+To view the execution results and generated output plots, run the Jupyter notebook (`.ipynb`) files in sequential order.
+
+### Instructions:
+1. **Directory Structure:** Ensure all source code modules and subfolders (`src/`, `data/`, `notebooks/`) remain together in the project root folder.
+2. **Execution Order:** To follow the correct compilation workflow and model progression, refer to the attached project report (`IIQF_capstone_project.pdf`).
+3. **Running Notebooks:** Open and run the notebooks sequentially from within the `notebooks/` directory:
+   - `01_calibration.ipynb`
+   - `02_term_structure.ipynb`
+   - `03_monte_carlo_validation.ipynb`
+   - `04_swaption_pricing.ipynb`
+
